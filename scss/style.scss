@@ -1,0 +1,241 @@
+@import "buttons";
+@import "config";
+@import "typography";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+/* Screen width display */
+.screen-width {
+  color: white;
+  background: red;
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  font-size: $fs-small;
+  border-radius: 30%;
+  padding: 1em;
+  font-weight: bold;
+}
+/* TYPOGRAPHY */
+
+/* GENERAL LAYOUT */
+
+/* NAVIGATION MOBILE */
+header {
+  background: $dark-c;
+}
+nav {
+  padding: 1em;
+  height: 10vh;
+  color: white;
+  background: $dark-c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+
+  a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+}
+.nav-bar {
+  position: fixed;
+  background: $dark-c;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-size: $fs-medium;
+  font-weight: bold;
+  clip-path: circle(5% at 100% -10%);
+  transition: all 1s ease;
+  li {
+    margin-left: 2em;
+  }
+  .submenu1,
+  .submenu2 {
+    li {
+      list-style: none;
+      font-size: $fs-small;
+      margin: 1em 0;
+      font-weight: normal;
+      margin-left: 40%;
+    }
+  }
+  &.active {
+    clip-path: circle(100%);
+  }
+}
+.research,
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .triangle1,
+  .triangle2 {
+    transition: all 0.5s ease;
+    &.flipped {
+      transform: rotate(180deg);
+    }
+  }
+
+  p {
+    margin-right: 4px;
+  }
+}
+
+.burger {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.line1,
+.line2 {
+  height: 3px;
+  width: 30px;
+  background: white;
+  margin: 6px;
+  border-radius: 10%;
+  transition: all 0.5s ease;
+}
+.line1.active {
+  transform: rotate(45deg) translateY(6px);
+}
+.line2.active {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+//NAVIGATION DESKTOP
+@media (min-width: 800px) {
+  .nav-bar {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    clip-path: none;
+    font-size: $fs-small;
+    li {
+      margin: 0 50px;
+      position: relative;
+      .submenu1,
+      .submenu2 {
+        background-color: $dark-c;
+        position: absolute;
+        margin-top: 1.2em;
+        padding: 1em;
+        width: 12em;
+        opacity: 0;
+        transition: all 0.5s ease;
+        &.active {
+          opacity: 1;
+        }
+        li {
+          list-style: none;
+          margin-bottom: 1em;
+          margin-left: 0;
+          font-weight: normal;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  .research,
+  .about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    p {
+      margin-right: 4px;
+    }
+  }
+  .burger {
+    display: none;
+  }
+}
+
+/////HOME PAGE MAIN CONTENT
+.home-container {
+  padding: 1em;
+  text-align: center;
+}
+.hero-top {
+  height: 30vh;
+  background: white;
+}
+
+.box-home {
+  background: $dark-c;
+  padding: 1em;
+  margin-bottom: 2em;
+  color: white;
+  h2 {
+    text-transform: uppercase;
+  }
+  .p-container {
+    background: white;
+    color: black;
+    padding: 1em;
+  }
+}
+
+//Main section Tablet
+
+// Main section desktop
+@media (min-width: 760px) {
+  .home-container {
+    background: linear-gradient(
+      183deg,
+      rgba(27, 152, 224, 1) 0%,
+      rgba(145, 217, 230, 1) 99%
+    );
+    padding: 0;
+    .hero-top p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+  .hero-main {
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+
+    .box-home + .box-home {
+      margin-left: 1em;
+    }
+    .box-home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: baseline;
+
+      flex: 1;
+      margin-top: -3em;
+      .p-container {
+        min-height: 400px;
+      }
+    }
+  }
+}
