@@ -14,14 +14,16 @@
 }
 
 .cta-home {
-  color: white;
+  color: #1b98e0;
   margin-top: 2em;
-  opacity: 0.7;
+  background: white;
+  max-width: 10em;
+  margin: 2em auto;
   font-weight: bold;
 }
 
 .cta-home:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .main-heading {
@@ -96,6 +98,12 @@ nav a {
   text-decoration: none;
   color: white;
   position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+nav a:hover {
+  color: #1b98e0;
 }
 
 .nav-bar {
@@ -126,6 +134,7 @@ nav a {
           clip-path: circle(5% at 100% -10%);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  z-index: 100;
 }
 
 .nav-bar li {
@@ -157,6 +166,8 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .research .triangle1,
@@ -180,9 +191,14 @@ nav a {
   margin-right: 4px;
 }
 
+.research:hover,
+.about:hover {
+  color: #1b98e0;
+}
+
 .burger {
   cursor: pointer;
-  z-index: 2;
+  z-index: 100;
 }
 
 .line1,
@@ -287,10 +303,14 @@ nav a {
   background: white;
 }
 
+.hero-top h1 {
+  margin-top: 0.5em;
+}
+
 .box-home {
   background: #1b1b1e;
-  padding: 1em;
-  margin-bottom: 2em;
+  padding: 2em;
+  margin-bottom: 1em;
   color: white;
 }
 
@@ -307,10 +327,45 @@ nav a {
 @media (min-width: 760px) {
   .home-container {
     background: linear-gradient(183deg, #1b98e0 0%, #91d9e6 99%);
-    height: 80vh;
     padding: 0;
   }
-  .home-container .hero-top p {
+  .hero-main {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "box1 box2" "box3 box3";
+    grid-column-gap: 1em;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .box-home:nth-child(1),
+  .box-home:nth-child(2) {
+    margin-top: -3em;
+  }
+  .box1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: box1;
+  }
+  .box2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: box2;
+  }
+  .box3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: box3;
+  }
+}
+
+@media (min-width: 1000px) {
+  .home-container {
+    background: linear-gradient(183deg, #1b98e0 0%, #91d9e6 99%);
+    padding: 0;
+    height: 80vh;
+  }
+  .hero-top p {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
@@ -340,9 +395,6 @@ nav a {
         -ms-flex: 1;
             flex: 1;
     margin-top: -3em;
-  }
-  .hero-main .box-home .p-container {
-    min-height: 400px;
   }
 }
 /*# sourceMappingURL=style.css.map */

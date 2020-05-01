@@ -50,7 +50,9 @@ nav {
     text-decoration: none;
     color: white;
     position: relative;
+    transition: all 0.5s ease;
     &:hover {
+      color: $third-c;
     }
   }
 }
@@ -71,6 +73,7 @@ nav {
   font-weight: bold;
   clip-path: circle(5% at 100% -10%);
   transition: all 1s ease;
+  z-index: 100;
   li {
     margin-left: 2em;
   }
@@ -93,6 +96,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  transition: all 0.5s ease;
   .triangle1,
   .triangle2 {
     transition: all 0.5s ease;
@@ -105,10 +109,14 @@ nav {
     margin-right: 4px;
   }
 }
+.research:hover,
+.about:hover {
+  color: $third-c;
+}
 
 .burger {
   cursor: pointer;
-  z-index: 2;
+  z-index: 100;
 }
 
 .line1,
@@ -189,13 +197,19 @@ nav {
 .hero-top {
   height: 30vh;
   background: white;
+  h1 {
+    margin-top: 0.5em;
+  }
+}
+.hero-main {
 }
 
 .box-home {
   background: $dark-c;
-  padding: 1em;
-  margin-bottom: 2em;
+  padding: 2em;
+  margin-bottom: 1em;
   color: white;
+
   h2 {
     text-transform: uppercase;
   }
@@ -207,9 +221,6 @@ nav {
 }
 
 //Main section Tablet
-@media (min-width: 1130px) {
-}
-// Main section desktop
 @media (min-width: 760px) {
   .home-container {
     background: linear-gradient(
@@ -217,14 +228,49 @@ nav {
       rgba(27, 152, 224, 1) 0%,
       rgba(145, 217, 230, 1) 99%
     );
-    height: 80vh;
     padding: 0;
-    .hero-top p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
   }
+  .hero-main {
+    display: grid;
+    grid-template-areas:
+      "box1 box2"
+      "box3 box3";
+    grid-column-gap: 1em;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .box-home:nth-child(1),
+  .box-home:nth-child(2) {
+    margin-top: -3em;
+  }
+  .box1 {
+    grid-area: box1;
+  }
+  .box2 {
+    grid-area: box2;
+  }
+  .box3 {
+    grid-area: box3;
+  }
+}
+// Main section desktop
+@media (min-width: 1000px) {
+  .home-container {
+    background: linear-gradient(
+      183deg,
+      rgba(27, 152, 224, 1) 0%,
+      rgba(145, 217, 230, 1) 99%
+    );
+    padding: 0;
+    height: 80vh;
+  }
+  .hero-top p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   .hero-main {
     display: flex;
     margin: 0 auto;
@@ -237,12 +283,8 @@ nav {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
       flex: 1;
       margin-top: -3em;
-      .p-container {
-        min-height: 400px;
-      }
     }
   }
 }
