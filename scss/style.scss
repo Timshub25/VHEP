@@ -50,6 +50,8 @@ nav {
     text-decoration: none;
     color: white;
     position: relative;
+    &:hover {
+    }
   }
 }
 .nav-bar {
@@ -127,6 +129,10 @@ nav {
 
 //NAVIGATION DESKTOP
 @media (min-width: 800px) {
+  nav {
+    margin: 0 auto;
+    max-width: 90%;
+  }
   .nav-bar {
     position: relative;
     flex-direction: row;
@@ -136,7 +142,7 @@ nav {
     clip-path: none;
     font-size: $fs-small;
     li {
-      margin: 0 50px;
+      margin: 0 30px;
       position: relative;
       .submenu1,
       .submenu2 {
@@ -201,7 +207,8 @@ nav {
 }
 
 //Main section Tablet
-
+@media (min-width: 1130px) {
+}
 // Main section desktop
 @media (min-width: 760px) {
   .home-container {
@@ -210,6 +217,7 @@ nav {
       rgba(27, 152, 224, 1) 0%,
       rgba(145, 217, 230, 1) 99%
     );
+    height: 80vh;
     padding: 0;
     .hero-top p {
       font-size: 1.2rem;
@@ -228,8 +236,7 @@ nav {
     .box-home {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: baseline;
+      justify-content: space-between;
 
       flex: 1;
       margin-top: -3em;
