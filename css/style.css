@@ -201,6 +201,12 @@ nav a:hover {
   z-index: 100;
 }
 
+.burger.fixed {
+  position: fixed;
+  top: 31px;
+  right: 15px;
+}
+
 .line1,
 .line2 {
   height: 3px;
@@ -310,6 +316,7 @@ nav a:hover {
 .box-home {
   background: #1b1b1e;
   padding: 2em;
+  margin-top: 4em;
   margin-bottom: 1em;
   color: white;
 }
@@ -396,5 +403,45 @@ nav a:hover {
             flex: 1;
     margin-top: -3em;
   }
+}
+
+footer {
+  background: #1b1b1e;
+  padding: 2em;
+  color: white;
+  text-align: center;
+}
+
+.team-container {
+  padding: 1em;
+}
+
+.team-top {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.glide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.glide__slide {
+  height: 80vh;
+}
+
+.glide__slide img {
+  height: 40vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1em;
 }
 /*# sourceMappingURL=style.css.map */

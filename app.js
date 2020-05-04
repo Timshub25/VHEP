@@ -21,6 +21,7 @@ burger.addEventListener("click", () => {
   navbar.classList.toggle("active");
   line1.classList.toggle("active");
   line2.classList.toggle("active");
+  burger.classList.toggle("fixed");
 });
 //Drop down nav  for about
 const about = get(".about");
@@ -41,24 +42,3 @@ research.addEventListener("click", (e) => {
   submenu2.classList.toggle("active");
   triangle2.classList.toggle("flipped");
 });
-
-//Glide code
-// const config = {
-//   type: "carousel",
-//   perView: 3,
-//   animationDuration: 1000,
-//   breakpoints: {
-//     1024: {
-//       perView: 3,
-//     },
-//     900: {
-//       perView: 2,
-//     },
-//     600: {
-//       perView: 1,
-//     },
-//   },
-// };
-// new Glide(".glide", config).mount();
-
-//
