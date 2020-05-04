@@ -3,6 +3,7 @@ const config = {
   type: "carousel",
   perView: 3,
   animationDuration: 1000,
+  gap: 40,
   breakpoints: {
     1024: {
       perView: 3,

@@ -421,6 +421,15 @@ footer {
   margin-bottom: 2em;
 }
 
+.team-top h1 {
+  text-transform: uppercase;
+  color: #1b98e0;
+}
+
+.team-top p:nth-of-type(2) {
+  font-weight: bold;
+}
+
 .glide-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,6 +440,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 4em;
 }
 
 .glide__slide {

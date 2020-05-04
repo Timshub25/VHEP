@@ -300,6 +300,7 @@ footer {
   color: white;
   text-align: center;
 }
+
 //Our team
 .team-container {
   padding: 1em;
@@ -307,12 +308,20 @@ footer {
 .team-top {
   text-align: center;
   margin-bottom: 2em;
+  h1 {
+    text-transform: uppercase;
+    color: $third-c;
+  }
+  p:nth-of-type(2) {
+    font-weight: bold;
+  }
 }
 
 .glide-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4em;
 }
 .glide__slide {
   height: 80vh;
