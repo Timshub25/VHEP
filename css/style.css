@@ -300,25 +300,23 @@ nav a:hover {
 }
 
 .home-container {
-  padding: 1em;
   text-align: center;
 }
 
 .hero-top {
-  height: 30vh;
-  background: white;
-}
-
-.hero-top h1 {
-  margin-top: 0.5em;
+  padding: 4em 1em;
+  background: #cbc4c4;
+  color: white;
+  background-image: url("../images/Buildings.jpg");
+  background-blend-mode: multiply;
 }
 
 .box-home {
   background: #1b1b1e;
   padding: 2em;
-  margin-top: 4em;
-  margin-bottom: 1em;
+  margin: 2em auto 2em auto;
   color: white;
+  max-width: 95%;
 }
 
 .box-home h2 {
@@ -333,7 +331,6 @@ nav a:hover {
 
 @media (min-width: 760px) {
   .home-container {
-    background: linear-gradient(183deg, #1b98e0 0%, #91d9e6 99%);
     padding: 0;
   }
   .hero-main {
@@ -343,10 +340,6 @@ nav a:hover {
     grid-column-gap: 1em;
     max-width: 90%;
     margin: 0 auto;
-  }
-  .box-home:nth-child(1),
-  .box-home:nth-child(2) {
-    margin-top: -3em;
   }
   .box1 {
     -ms-grid-row: 1;
@@ -368,9 +361,7 @@ nav a:hover {
 
 @media (min-width: 1000px) {
   .home-container {
-    background: linear-gradient(183deg, #1b98e0 0%, #91d9e6 99%);
     padding: 0;
-    height: 80vh;
   }
   .hero-top p {
     font-size: 1.2rem;
@@ -381,7 +372,7 @@ nav a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto;
+    margin: 0em auto 2em auto;
     max-width: 90%;
   }
   .hero-main .box-home + .box-home {
@@ -398,10 +389,6 @@ nav a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    margin-top: -3em;
   }
 }
 
