@@ -17,8 +17,6 @@
   background: white;
   max-width: 10em;
   margin: 2em auto;
-  font-weight: bold;
-  &:hover {
-    opacity: 0.7;
-  }
+  // font-weight: bold;
+  text-transform: uppercase;
 }
