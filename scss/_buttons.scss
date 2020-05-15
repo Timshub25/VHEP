@@ -6,9 +6,9 @@
   display: inline-block;
   margin: 1em;
 
-  &:hover {
-    transform: scale(0.8);
-  }
+  // &:hover {
+  //   transform: scale(0.8);
+  // }
 }
 .cta-home {
   @extend #btn;
@@ -17,6 +17,27 @@
   background: white;
   max-width: 10em;
   margin: 2em auto;
-  // font-weight: bold;
+  position: relative;
   text-transform: uppercase;
+  overflow: hidden;
+  &:hover.cta-home::after {
+    transform: translateX(0%);
+  }
+  &:hover {
+    color: black;
+  }
+}
+.cta-home::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #1b98e0;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
 }

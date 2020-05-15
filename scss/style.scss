@@ -331,14 +331,27 @@ footer {
     font-size: 2.4rem;
     text-transform: uppercase;
     font-weight: bold;
-    span {
+    max-width: 1000px;
+    margin: 2em auto;
+    .box-span-behaviour {
       color: $first-c;
+    }
+    .box-span-health {
+      color: $second-c;
+    }
+    .box-span-data {
+      color: $third-c;
     }
   }
 }
 .box-main {
   padding: 1em;
   background: white;
+  p {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 //box pages tablet
@@ -348,6 +361,16 @@ footer {
     background: white;
     max-width: 80%;
     margin: -2em auto 0 auto;
+  }
+  .main-heading-behaviour {
+    border-left: 6px solid $first-c;
+  }
+  .main-heading-health {
+    border-left: 6px solid $second-c;
+  }
+  .main-heading-data {
+    border-left: 6px solid $third-c;
+    padding: 0em 0.4em;
   }
 }
 //box pages desktop
