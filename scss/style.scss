@@ -20,7 +20,7 @@ body {
 .screen-width {
   color: white;
   background: red;
-  position: absolute;
+  position: fixed;
   bottom: 2em;
   right: 2em;
   font-size: $fs-small;
@@ -276,13 +276,103 @@ nav {
     }
   }
 }
+//Parallax-home
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
+.pimg1 {
+  background-image: url("../images/parralax/image1.jpg");
+  min-height: 60%;
+}
+.pimg2 {
+  background-image: url("../images/parralax/image2.jpg");
+  min-height: 400px;
+}
+.pimg3 {
+  background-image: url("../images/parralax/image3.jpg");
+  min-height: 400px;
+}
+
+.psection {
+  text-align: center;
+  padding: 3em 1em;
+  p {
+    max-width: 1300px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+}
+.psection-dark {
+  background: #333;
+  color: rgb(230, 223, 223);
+}
+.psection-light {
+  background-color: #f4f4f4;
+  color: rgb(34, 33, 33);
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+.ptext2,
+.ptext3 {
+  font-size: 2em;
+}
+
+.ptext .border {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 20px;
+}
+.ptext .border-light {
+  background: white;
+  padding: 20px;
+}
+.heading-p {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
 //footer
 footer {
   background: $dark-c;
   padding: 2em;
   color: white;
   text-align: center;
+  .social-icons {
+    margin: 1em;
+    a {
+      color: white;
+      margin: 1em;
+      font-size: 1.5em;
+      display: block;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $third-c;
+      }
+    }
+  }
+}
+
+//footer tablet && desktop
+@media (min-width: 600px) {
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 //Our team
@@ -294,7 +384,8 @@ footer {
   margin-bottom: 2em;
   h1 {
     text-transform: uppercase;
-    color: $third-c;
+    font-size: 3.2em;
+    font-weight: bold;
   }
   p:nth-of-type(2) {
     font-weight: bold;

@@ -79,7 +79,7 @@ body {
 .screen-width {
   color: white;
   background: red;
-  position: absolute;
+  position: fixed;
   bottom: 2em;
   right: 2em;
   font-size: 1rem;
@@ -410,11 +410,118 @@ nav a:hover {
   }
 }
 
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url("../images/parralax/image1.jpg");
+  min-height: 60%;
+}
+
+.pimg2 {
+  background-image: url("../images/parralax/image2.jpg");
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url("../images/parralax/image3.jpg");
+  min-height: 400px;
+}
+
+.psection {
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.psection p {
+  max-width: 1300px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.psection-dark {
+  background: #333;
+  color: #e6dfdf;
+}
+
+.psection-light {
+  background-color: #f4f4f4;
+  color: #222121;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.ptext2,
+.ptext3 {
+  font-size: 2em;
+}
+
+.ptext .border {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.ptext .border-light {
+  background: white;
+  padding: 20px;
+}
+
+.heading-p {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
 footer {
   background: #1b1b1e;
   padding: 2em;
   color: white;
   text-align: center;
+}
+
+footer .social-icons {
+  margin: 1em;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 1em;
+  font-size: 1.5em;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+footer .social-icons a:hover {
+  color: #1b98e0;
+}
+
+@media (min-width: 600px) {
+  .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .team-container {
@@ -428,7 +535,8 @@ footer {
 
 .team-top h1 {
   text-transform: uppercase;
-  color: #1b98e0;
+  font-size: 3.2em;
+  font-weight: bold;
 }
 
 .team-top p:nth-of-type(2) {
