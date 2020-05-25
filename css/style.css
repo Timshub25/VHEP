@@ -299,6 +299,12 @@ nav a:hover {
     font-weight: normal;
     font-size: 0.8rem;
   }
+  .sub:hover .submenu1 {
+    opacity: 1;
+  }
+  .sub:hover .submenu2 {
+    opacity: 1;
+  }
   .research,
   .about {
     display: -webkit-box;
