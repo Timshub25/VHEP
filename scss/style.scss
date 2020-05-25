@@ -447,18 +447,21 @@ footer {
     }
   }
 }
-
-//Our team
-.team-container {
-  padding: 1em;
-}
-.team-top {
+//sub-pages general
+.sub-page-top {
+  background: gray;
+  background-image: url("../images/sub-page-top.jpg");
+  background-blend-mode: multiply;
+  background-position: center;
   text-align: center;
-  margin-bottom: 2em;
+  padding: 2em;
+  background-size: cover;
+  color: white;
+}
+//Our team
 
-  p:nth-of-type(2) {
-    font-weight: bold;
-  }
+p:nth-of-type(2) {
+  font-weight: bold;
 }
 
 .glide-container {
@@ -466,9 +469,14 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 4em;
+  position: relative;
+  max-width: 1600px;
+  margin: 1em auto;
 }
 .glide__slide {
-  height: 80vh;
+  min-height: 100vh;
+  box-shadow: $bs;
+  padding: 1em;
   img {
     height: 40vh;
     width: 100%;
@@ -492,9 +500,17 @@ footer {
   .gallery-box {
     text-align: center;
     box-shadow: $bs;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    a {
+      text-decoration: none;
+    }
     h1 {
       margin-bottom: 1em;
       color: $first-c;
+    }
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

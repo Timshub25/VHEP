@@ -5,9 +5,6 @@ const config = {
   animationDuration: 1000,
   gap: 40,
   breakpoints: {
-    1024: {
-      perView: 3,
-    },
     900: {
       perView: 2,
     },
