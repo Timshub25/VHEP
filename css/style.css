@@ -169,8 +169,7 @@ nav a:hover {
   margin-left: 2em;
 }
 
-.nav-bar .submenu1 li,
-.nav-bar .submenu2 li {
+.nav-bar .submenu li {
   list-style: none;
   font-size: 1rem;
   margin: 1em 0;
@@ -217,11 +216,6 @@ nav a:hover {
 .research p,
 .about p {
   margin-right: 4px;
-}
-
-.research:hover,
-.about:hover {
-  color: #1b98e0;
 }
 
 .burger {
@@ -276,34 +270,24 @@ nav a:hover {
     margin: 0 30px;
     position: relative;
   }
-  .nav-bar li .submenu1,
-  .nav-bar li .submenu2 {
+  .nav-bar li .submenu {
     background-color: #1b1b1e;
     position: absolute;
-    margin-top: 1.2em;
-    padding: 1em;
+    padding: 2em 1em 1em 1em;
     width: 12em;
-    opacity: 0;
+    display: none;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .nav-bar li .submenu1.active,
-  .nav-bar li .submenu2.active {
+  .nav-bar li .submenu.active {
     opacity: 1;
   }
-  .nav-bar li .submenu1 li,
-  .nav-bar li .submenu2 li {
+  .nav-bar li .submenu li {
     list-style: none;
     margin-bottom: 1em;
     margin-left: 0;
     font-weight: normal;
     font-size: 0.8rem;
-  }
-  .sub:hover .submenu1 {
-    opacity: 1;
-  }
-  .sub:hover .submenu2 {
-    opacity: 1;
   }
   .research,
   .about {
@@ -321,6 +305,13 @@ nav a:hover {
   .research p,
   .about p {
     margin-right: 4px;
+  }
+  .research:hover,
+  .about:hover {
+    color: #1b98e0;
+  }
+  .sub:hover .submenu {
+    display: block;
   }
   .burger {
     display: none;
@@ -651,6 +642,7 @@ p:nth-of-type(2) {
 
 .glide__slide {
   min-height: 100vh;
+  overflow: scroll;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1em;

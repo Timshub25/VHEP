@@ -23,22 +23,22 @@ burger.addEventListener("click", () => {
   line2.classList.toggle("active");
   burger.classList.toggle("fixed");
 });
-//Drop down nav  for about
-const about = get(".about");
-const submenu1 = get(".submenu1");
-const triangle1 = get(".triangle1");
-about.addEventListener("click", (e) => {
-  e.preventDefault();
-  submenu1.classList.toggle("active");
-  triangle1.classList.toggle("flipped");
-});
+// //Drop down nav  for about
+// const about = get(".about");
+// const submenu1 = get(".submenu1");
+// const triangle1 = get(".triangle1");
+// about.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   submenu1.classList.toggle("active");
+//   triangle1.classList.toggle("flipped");
+// });
 
-//Drop down nav  for research
-const research = get(".research");
-const submenu2 = get(".submenu2");
-const triangle2 = get(".triangle2");
-research.addEventListener("click", (e) => {
-  e.preventDefault();
-  submenu2.classList.toggle("active");
-  triangle2.classList.toggle("flipped");
-});
+// //Drop down nav  for research
+// const research = get(".research");
+// const submenu2 = get(".submenu2");
+// const triangle2 = get(".triangle2");
+// research.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   submenu2.classList.toggle("active");
+//   triangle2.classList.toggle("flipped");
+// });
