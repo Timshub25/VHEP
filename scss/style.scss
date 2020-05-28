@@ -479,8 +479,6 @@ p:nth-of-type(2) {
   margin: 1em auto;
 }
 .glide__slide {
-  min-height: 100vh;
-
   box-shadow: $bs;
   padding: 1em;
   img {
@@ -488,10 +486,6 @@ p:nth-of-type(2) {
     width: 100%;
     object-fit: cover;
     margin-bottom: 1em;
-  }
-  p {
-    max-height: 400px;
-    overflow-y: scroll;
   }
 }
 //PARTNERS

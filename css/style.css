@@ -641,7 +641,6 @@ p:nth-of-type(2) {
 }
 
 .glide__slide {
-  min-height: 100vh;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1em;
@@ -653,11 +652,6 @@ p:nth-of-type(2) {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 1em;
-}
-
-.glide__slide p {
-  max-height: 400px;
-  overflow-y: scroll;
 }
 
 .partners-gallery {
