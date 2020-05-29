@@ -756,6 +756,12 @@ footer .social-icons a:hover {
   padding: 1em;
 }
 
+.publications-wrapper h2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 3em;
+}
+
 .publications-wrapper .publication,
 .publications-wrapper h3 {
   max-width: 1200px;
@@ -779,5 +785,11 @@ footer .social-icons a:hover {
 .publications-wrapper h3 {
   font-weight: 900;
   font-size: 2em;
+}
+
+@media (min-width: 600px) {
+  .publications-wrapper h2 {
+    font-size: 4em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

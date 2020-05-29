@@ -551,7 +551,11 @@ footer {
 //Publications
 .publications-wrapper {
   padding: 1em;
-
+  h2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 3em;
+  }
   .publication,
   h3 {
     max-width: 1200px;
@@ -572,5 +576,12 @@ footer {
   h3 {
     font-weight: 900;
     font-size: 2em;
+  }
+}
+@media (min-width: 600px) {
+  .publications-wrapper {
+    h2 {
+      font-size: 4em;
+    }
   }
 }
