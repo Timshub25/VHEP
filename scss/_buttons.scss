@@ -10,7 +10,8 @@
   //   transform: scale(0.8);
   // }
 }
-.cta-home {
+.cta-home,
+.cta-box {
   @extend #btn;
   color: #1b98e0;
   margin-top: 2em;
@@ -23,11 +24,12 @@
   &:hover.cta-home::after {
     transform: translateX(0%);
   }
-  &:hover {
-    color: black;
+  &:hover.cta-box::after {
+    transform: translateX(0%);
   }
 }
-.cta-home::after {
+.cta-home::after,
+.cta-box::after {
   content: "";
   display: block;
   height: 100%;
@@ -40,4 +42,17 @@
 
   transform: translateX(-100%);
   transition: all 0.5s ease;
+}
+
+.cta-box {
+  background: black;
+  color: white;
+  margin: 1em 2em;
+
+  &:hover {
+    color: white;
+  }
+}
+.cta-home:hover {
+  color: black;
 }

@@ -9,6 +9,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: white;
@@ -144,6 +147,7 @@ nav {
     height: 100%;
     clip-path: none;
     font-size: $fs-small;
+    font-weight: normal;
     li {
       margin: 0 30px;
       position: relative;
@@ -192,6 +196,9 @@ nav {
   .burger {
     display: none;
   }
+}
+.current-page {
+  border-bottom: 1px solid white;
 }
 
 /////HOME PAGE MAIN CONTENT
@@ -465,10 +472,6 @@ footer {
 }
 //Our team
 
-p:nth-of-type(2) {
-  font-weight: bold;
-}
-
 .glide-container {
   display: flex;
   justify-content: center;
@@ -516,5 +519,58 @@ p:nth-of-type(2) {
     &:hover {
       transform: scale(1.1);
     }
+  }
+}
+//Grants
+.grants-wrapper {
+  padding: 1em;
+  max-width: 1500px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    box-shadow: $bs;
+  }
+}
+//Grants desktop + tablet
+@media (min-width: 720px) {
+  .grant {
+    display: flex;
+    img {
+      order: -1;
+      object-fit: contain;
+      max-width: 500px;
+      max-height: 500px;
+      margin: 0 2em 2em 0;
+    }
+    p {
+      max-width: 700px;
+    }
+  }
+}
+
+//Publications
+.publications-wrapper {
+  padding: 1em;
+
+  .publication,
+  h3 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .publication {
+    margin-bottom: 2em;
+  }
+
+  span {
+    font-weight: bold;
+    display: inline-block;
+  }
+  .doi {
+    margin-right: 1em;
+    font-weight: normal;
+  }
+  h3 {
+    font-weight: 900;
+    font-size: 2em;
   }
 }
