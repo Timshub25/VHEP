@@ -466,15 +466,22 @@ footer {
   }
 }
 //sub-pages general
-.sub-page-top {
+.sub-page-top,
+.sub-page2-top {
   background: gray;
-  background-image: url("../images/sub-page-top.jpg");
+
   background-blend-mode: multiply;
   background-position: center;
   text-align: center;
   padding: 2em;
   background-size: cover;
   color: white;
+}
+.sub-page-top {
+  background-image: url("../images/sub-page-top.jpg");
+}
+.sub-page2-top {
+  background-image: url("../images/sub-page2-top.jpg");
 }
 //Our team
 
@@ -532,7 +539,7 @@ footer {
   padding: 1em;
   max-width: 1500px;
   margin: 0 auto;
-  h2 {
+  h1 {
     font-size: 3em;
   }
   img {
@@ -542,8 +549,11 @@ footer {
 }
 //Grants desktop + tablet
 @media (min-width: 720px) {
-  .grants-wrapper h2 {
-    font-size: $fs-large;
+  .sub-page2-top {
+    padding: 3em;
+    h1 {
+      font-size: $fs-large;
+    }
   }
   .grant {
     display: flex;
@@ -561,13 +571,15 @@ footer {
 }
 
 //Publications
+.sub-page2-top {
+  padding: 3em;
+  h1 {
+    font-size: 2.5em;
+  }
+}
 .publications-wrapper {
   padding: 1em;
-  h2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-size: 3em;
-  }
+
   .publication,
   h3 {
     max-width: 1200px;
@@ -591,8 +603,9 @@ footer {
   }
 }
 @media (min-width: 600px) {
-  .publications-wrapper {
-    h2 {
+  .sub-page2-top {
+    padding: 3em;
+    h1 {
       font-size: $fs-large;
     }
   }
