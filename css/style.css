@@ -247,6 +247,12 @@ nav a:hover {
   z-index: 100;
 }
 
+.burger.fixed {
+  position: fixed;
+  right: 0;
+  padding: 1em;
+}
+
 .line1,
 .line2 {
   height: 3px;
@@ -564,7 +570,7 @@ footer .social-icons a:hover {
 
 .box-wrapper {
   text-align: center;
-  background-color: #020234;
+  background-color: #343746;
 }
 
 .box-wrapper .box-hero-top {
@@ -725,6 +731,10 @@ footer .social-icons a:hover {
   margin: 0 auto;
 }
 
+.grants-wrapper h2 {
+  font-size: 3em;
+}
+
 .grants-wrapper img {
   width: 100%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -732,6 +742,9 @@ footer .social-icons a:hover {
 }
 
 @media (min-width: 720px) {
+  .grants-wrapper h2 {
+    font-size: 4rem;
+  }
   .grant {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -789,7 +802,12 @@ footer .social-icons a:hover {
 
 @media (min-width: 600px) {
   .publications-wrapper h2 {
-    font-size: 4em;
+    font-size: 4rem;
   }
+}
+
+.twitter-feed {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
