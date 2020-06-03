@@ -306,10 +306,10 @@ nav {
   background-image: url("../images/parralax/image1.jpg");
   min-height: 60%;
 }
-.pimg2 {
-  background-image: url("../images/parralax/image2.jpg");
-  min-height: 400px;
-}
+// .pimg2 {
+//   background-image: url("../images/parralax/image2.jpg");
+//   min-height: 400px;
+// }
 .pimg3 {
   background-image: url("../images/parralax/image3.jpg");
   min-height: 400px;
@@ -467,11 +467,11 @@ footer {
 }
 //sub-pages general
 .sub-page-top,
-.sub-page2-top {
+.sub-page2-top,
+.sub-page3-top {
   background: gray;
-
   background-blend-mode: multiply;
-  background-position: center;
+
   text-align: center;
   padding: 2em;
   background-size: cover;
@@ -479,9 +479,17 @@ footer {
 }
 .sub-page-top {
   background-image: url("../images/sub-page-top.jpg");
+  background-position: center;
 }
 .sub-page2-top {
   background-image: url("../images/sub-page2-top.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.sub-page3-top {
+  background-image: url("../images/News\ Feed.jpg");
+  background-position: center;
+  font-size: $fs-medium;
 }
 //Our team
 
