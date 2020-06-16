@@ -382,15 +382,14 @@ nav a:hover {
   padding: 1em;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 900px) {
   .home-container {
     padding: 0;
   }
   .hero-main {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "box1 box2" "box3 box3";
-    grid-column-gap: 1em;
+        grid-template-areas: "box1 box2" "box3 box4";
     max-width: 90%;
     margin: 0 auto;
   }
@@ -407,12 +406,16 @@ nav a:hover {
   .box3 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: box3;
+  }
+  .box4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: box4;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   .home-container {
     padding: 0;
   }
@@ -426,22 +429,10 @@ nav a:hover {
     display: -ms-flexbox;
     display: flex;
     margin: 0em auto 2em auto;
-    max-width: 90%;
+    max-width: 95%;
   }
   .hero-main .box-home + .box-home {
-    margin-left: 1em;
-  }
-  .hero-main .box-home {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin-left: 2em;
   }
 }
 
@@ -564,7 +555,8 @@ footer .social-icons a:hover {
 
 .box-wrapper {
   text-align: center;
-  background-color: #343746;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a6a4bb), to(#eaeeee));
+  background: linear-gradient(180deg, #a6a4bb 0%, #eaeeee 100%);
 }
 
 .box-wrapper .box-hero-top {
@@ -689,11 +681,17 @@ footer .social-icons a:hover {
 }
 
 .glide__slide img {
-  height: 40vh;
   width: 100%;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 1em;
+  border-radius: 10%;
+  padding: 1em;
+}
+
+.glide__slide .team-slide {
+  text-align: center;
 }
 
 .partners-gallery {

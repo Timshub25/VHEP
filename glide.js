@@ -1,7 +1,7 @@
 // // Glide code
 const config = {
   type: "carousel",
-  perView: 3,
+  perView: 4,
   animationDuration: 1000,
   gap: 40,
   breakpoints: {
