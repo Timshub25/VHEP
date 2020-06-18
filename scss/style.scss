@@ -496,11 +496,20 @@ footer {
   font-size: $fs-medium;
 }
 //Our team
-
+.slider2 {
+  background: $first-c;
+  padding: 2em;
+}
+.slider1 {
+  padding: 2em;
+}
 .team-heading {
   text-align: center;
   margin: 1em 0;
   font-size: 3em;
+}
+.team-heading2 {
+  color: white;
 }
 .glide-container {
   display: flex;
@@ -522,7 +531,7 @@ footer {
     width: 10em;
     height: 10em;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 30%;
     position: absolute;
     top: -80px;
     left: 3em;

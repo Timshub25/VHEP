@@ -670,10 +670,23 @@ footer .social-icons a:hover {
   font-size: 2rem;
 }
 
+.slider2 {
+  background: #006494;
+  padding: 2em;
+}
+
+.slider1 {
+  padding: 2em;
+}
+
 .team-heading {
   text-align: center;
   margin: 1em 0;
   font-size: 3em;
+}
+
+.team-heading2 {
+  color: white;
 }
 
 .glide-container {
@@ -705,7 +718,7 @@ footer .social-icons a:hover {
   height: 10em;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
+  border-radius: 30%;
   position: absolute;
   top: -80px;
   left: 3em;
