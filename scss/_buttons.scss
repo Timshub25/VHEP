@@ -11,7 +11,8 @@
   // }
 }
 .cta-home,
-.cta-box {
+.cta-box,
+.cta-slider {
   @extend #btn;
   color: #1b98e0;
   margin-top: 2em;
@@ -27,9 +28,13 @@
   &:hover.cta-box::after {
     transform: translateX(0%);
   }
+  &:hover.cta-slider::after {
+    transform: translateX(0%);
+  }
 }
 .cta-home::after,
-.cta-box::after {
+.cta-box::after,
+.cta-slider::after {
   content: "";
   display: block;
   height: 100%;
@@ -48,6 +53,7 @@
   background: black;
   color: white;
   margin: 1em 2em;
+  // width: 150px;
 
   &:hover {
     color: white;
@@ -55,4 +61,10 @@
 }
 .cta-home:hover {
   color: black;
+}
+
+.cta-slider {
+  background: black;
+  color: white;
+  margin: 1em auto;
 }

@@ -531,10 +531,10 @@ footer {
     width: 10em;
     height: 10em;
     object-fit: cover;
-    border-radius: 30%;
+    border-radius: 50%;
     position: absolute;
     top: -80px;
-    left: 3em;
+    left: 2em;
   }
   .team-slide {
     text-align: center;
@@ -544,7 +544,7 @@ footer {
       rgba(233, 233, 244, 1) 0%,
       rgba(205, 215, 241, 1) 100%
     );
-    padding: 3em;
+    padding: 3em 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

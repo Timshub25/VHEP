@@ -1,5 +1,6 @@
 #btn, .cta-home,
-.cta-box {
+.cta-box,
+.cta-slider {
   padding: 0.5em 1.5em;
   font-size: 1.5rem;
   text-decoration: none;
@@ -10,7 +11,8 @@
 }
 
 .cta-home,
-.cta-box {
+.cta-box,
+.cta-slider {
   color: #1b98e0;
   margin-top: 2em;
   background: white;
@@ -22,19 +24,29 @@
 }
 
 .cta-home:hover.cta-home::after,
-.cta-box:hover.cta-home::after {
+.cta-box:hover.cta-home::after,
+.cta-slider:hover.cta-home::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
 
 .cta-home:hover.cta-box::after,
-.cta-box:hover.cta-box::after {
+.cta-box:hover.cta-box::after,
+.cta-slider:hover.cta-box::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.cta-home:hover.cta-slider::after,
+.cta-box:hover.cta-slider::after,
+.cta-slider:hover.cta-slider::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
 
 .cta-home::after,
-.cta-box::after {
+.cta-box::after,
+.cta-slider::after {
   content: "";
   display: block;
   height: 100%;
@@ -62,6 +74,12 @@
 
 .cta-home:hover {
   color: black;
+}
+
+.cta-slider {
+  background: black;
+  color: white;
+  margin: 1em auto;
 }
 
 .main-heading {
@@ -718,17 +736,17 @@ footer .social-icons a:hover {
   height: 10em;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 30%;
+  border-radius: 50%;
   position: absolute;
   top: -80px;
-  left: 3em;
+  left: 2em;
 }
 
 .glide__slide .team-slide {
   text-align: center;
   min-height: 45vh;
   background: linear-gradient(219deg, #e9e9f4 0%, #cdd7f1 100%);
-  padding: 3em;
+  padding: 3em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
