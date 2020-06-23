@@ -739,7 +739,7 @@ footer .social-icons a:hover {
   height: 10em;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
+  border-radius: 20%;
   position: absolute;
   top: -80px;
   left: 2em;
@@ -747,7 +747,7 @@ footer .social-icons a:hover {
 
 .glide__slide .team-slide {
   text-align: center;
-  min-height: 45vh;
+  min-height: 60vh;
   background: linear-gradient(219deg, #e9e9f4 0%, #cdd7f1 100%);
   padding: 3em 1em;
   display: -webkit-box;

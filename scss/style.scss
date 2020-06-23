@@ -534,14 +534,15 @@ footer {
     width: 10em;
     height: 10em;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20%;
+
     position: absolute;
     top: -80px;
     left: 2em;
   }
   .team-slide {
     text-align: center;
-    min-height: 45vh;
+    min-height: 60vh;
     background: linear-gradient(
       219deg,
       rgba(233, 233, 244, 1) 0%,
