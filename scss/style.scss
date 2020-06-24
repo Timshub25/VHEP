@@ -593,6 +593,7 @@ footer {
 }
 //Grants
 .grants-wrapper {
+  text-align: center;
   padding: 1em;
   max-width: 1500px;
   margin: 0 auto;
@@ -602,6 +603,12 @@ footer {
   img {
     width: 100%;
     box-shadow: $bs;
+
+    max-height: 500px;
+  }
+  a {
+    display: inline-block;
+    margin: 0.5em 0;
   }
 }
 //Grants desktop + tablet
@@ -614,11 +621,12 @@ footer {
   }
   .grant {
     display: flex;
+    text-align: left;
     img {
       order: -1;
-      object-fit: contain;
+      object-fit: cover;
       max-width: 500px;
-      max-height: 500px;
+      max-height: 400px;
       margin: 0 2em 2em 0;
     }
     p {
