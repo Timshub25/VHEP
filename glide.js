@@ -23,25 +23,26 @@ Object.values(carousels).map((carousel) => {
   slider.mount();
 });
 
-glide.update({ startAt: 0 });
-const config = {
-  type: "carousel",
-  perView: 4,
-  animationDuration: 1000,
-  gap: 10,
-  breakpoints: {
-    1400: {
-      perView: 3,
-    },
-    900: {
-      perView: 2,
-    },
-    600: {
-      perView: 1,
-    },
-  },
+// carousels.update({ startAt: 0 });
 
-  startAt: 0,
-};
+// const config = {
+//   type: "carousel",
+//   perView: 4,
+//   animationDuration: 1000,
+//   gap: 10,
+//   breakpoints: {
+//     1400: {
+//       perView: 3,
+//     },
+//     900: {
+//       perView: 2,
+//     },
+//     600: {
+//       perView: 1,
+//     },
+//   },
 
-new Glide(".glide", config).mount();
+//   startAt: 0,
+// };
+
+// new Glide(".glide", config).mount();
