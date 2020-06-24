@@ -1,4 +1,5 @@
 // // Glide code
+
 const carousels = document.querySelectorAll(".glide");
 
 Object.values(carousels).map((carousel) => {
@@ -22,6 +23,7 @@ Object.values(carousels).map((carousel) => {
   slider.mount();
 });
 
+glide.update({ startAt: 0 });
 const config = {
   type: "carousel",
   perView: 4,
@@ -38,6 +40,8 @@ const config = {
       perView: 1,
     },
   },
+
+  startAt: 0,
 };
 
 new Glide(".glide", config).mount();
