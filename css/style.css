@@ -817,6 +817,11 @@ footer .social-icons a:hover {
   margin: 0 auto;
 }
 
+.grants-wrapper .grant-heading {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
 .grants-wrapper h1 {
   font-size: 3em;
 }
@@ -852,8 +857,8 @@ footer .social-icons a:hover {
             order: -1;
     -o-object-fit: cover;
        object-fit: cover;
-    max-width: 500px;
-    max-height: 400px;
+    width: 500px;
+    height: 400px;
     margin: 0 2em 2em 0;
   }
   .grant p {

@@ -597,6 +597,10 @@ footer {
   padding: 1em;
   max-width: 1500px;
   margin: 0 auto;
+  .grant-heading {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
   h1 {
     font-size: 3em;
   }
@@ -625,8 +629,8 @@ footer {
     img {
       order: -1;
       object-fit: cover;
-      max-width: 500px;
-      max-height: 400px;
+      width: 500px;
+      height: 400px;
       margin: 0 2em 2em 0;
     }
     p {
