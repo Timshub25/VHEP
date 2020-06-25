@@ -822,6 +822,12 @@ footer .social-icons a:hover {
   font-weight: 800;
 }
 
+.grants-wrapper .grant-date {
+  border-bottom: 2px solid #646363;
+  width: 8em;
+  margin: 2em auto;
+}
+
 .grants-wrapper h1 {
   font-size: 3em;
 }
