@@ -208,6 +208,11 @@ nav a:hover {
   pointer-events: none;
 }
 
+.nav-bar .triangle1,
+.nav-bar .triangle2 {
+  opacity: 0;
+}
+
 .nav-bar li {
   margin-left: 2em;
 }
@@ -238,22 +243,6 @@ nav a:hover {
           align-items: center;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-.research .triangle1,
-.research .triangle2,
-.about .triangle1,
-.about .triangle2 {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.research .triangle1.flipped,
-.research .triangle2.flipped,
-.about .triangle1.flipped,
-.about .triangle2.flipped {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .research p,
@@ -316,6 +305,10 @@ nav a:hover {
     font-size: 1rem;
     font-weight: normal;
     pointer-events: all;
+  }
+  .nav-bar .triangle1,
+  .nav-bar .triangle2 {
+    opacity: 1;
   }
   .nav-bar li {
     margin: 0 30px;
@@ -826,6 +819,7 @@ footer .social-icons a:hover {
   border-bottom: 2px solid #646363;
   width: 8em;
   margin: 2em auto;
+  font-weight: bold;
 }
 
 .grants-wrapper h1 {
@@ -907,6 +901,10 @@ footer .social-icons a:hover {
 .publications-wrapper h3 {
   font-weight: 900;
   font-size: 2em;
+  width: 8em;
+  border-bottom: 2px solid gray;
+  text-align: center;
+  margin: 1em auto;
 }
 
 @media (min-width: 600px) {
