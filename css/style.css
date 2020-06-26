@@ -218,6 +218,7 @@ nav a:hover {
 }
 
 .nav-bar .submenu li {
+  list-style-image: url("../images/Line.png");
   font-size: 1rem;
   margin: 1em 0;
   font-weight: normal;
@@ -740,7 +741,7 @@ footer .social-icons a:hover {
 
 .glide__slide .team-slide {
   text-align: center;
-  min-height: 60vh;
+  min-height: 70vh;
   background: linear-gradient(219deg, #e9e9f4 0%, #cdd7f1 100%);
   padding: 3em 1em;
   display: -webkit-box;

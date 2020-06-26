@@ -12,10 +12,10 @@ Object.values(carousels).map((carousel) => {
       1400: {
         perView: 3,
       },
-      900: {
+      1000: {
         perView: 2,
       },
-      600: {
+      650: {
         perView: 1,
       },
     },

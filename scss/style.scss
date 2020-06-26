@@ -89,7 +89,7 @@ nav {
   }
   .submenu {
     li {
-      // list-style: none;
+      list-style-image: url("../images/Line.png");
       font-size: $fs-small;
       margin: 1em 0;
       font-weight: normal;
@@ -544,7 +544,7 @@ footer {
   }
   .team-slide {
     text-align: center;
-    min-height: 60vh;
+    min-height: 70vh;
     background: linear-gradient(
       219deg,
       rgba(233, 233, 244, 1) 0%,
