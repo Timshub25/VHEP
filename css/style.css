@@ -373,10 +373,11 @@ nav a:hover {
 
 .hero-top {
   padding: 4em 1em;
-  background: black;
-  color: #f0ebeb;
+  background: #c7c3c3;
+  color: #fffdfd;
   font-size: 1.2rem;
   background-image: url("../images/library.jpg");
+  background-blend-mode: multiply;
 }
 
 .hero-top h1 {
