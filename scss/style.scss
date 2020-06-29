@@ -217,12 +217,15 @@ nav {
   text-align: center;
 }
 .hero-top {
+  h1 {
+    font-weight: bold;
+  }
   padding: 4em 1em;
-  background: rgb(54, 183, 206);
-  color: rgb(32, 26, 26);
+  background: rgb(110, 115, 116);
+  color: rgb(243, 243, 243);
   font-size: 1.2rem;
-  background-image: url("../images/ocean.jpg");
-  background-blend-mode: lighten;
+  background-image: url("../images/dark_view.jpg");
+  background-blend-mode: multiply;
   background-position: 5% 60%;
 }
 
@@ -444,6 +447,10 @@ footer {
   }
 }
 
+.small-box {
+  margin: 3em;
+}
+
 //box pages tablet
 @media (min-width: 800px) {
   .box-main {
@@ -464,7 +471,7 @@ footer {
   }
 }
 //box pages desktop
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .box-main {
     max-width: 70%;
   }

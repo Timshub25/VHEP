@@ -373,12 +373,16 @@ nav a:hover {
 
 .hero-top {
   padding: 4em 1em;
-  background: #36b7ce;
-  color: #201a1a;
+  background: #6e7374;
+  color: #f3f3f3;
   font-size: 1.2rem;
-  background-image: url("../images/ocean.jpg");
-  background-blend-mode: lighten;
+  background-image: url("../images/dark_view.jpg");
+  background-blend-mode: multiply;
   background-position: 5% 60%;
+}
+
+.hero-top h1 {
+  font-weight: bold;
 }
 
 .box-home {
@@ -625,6 +629,10 @@ footer .social-icons a:hover {
   margin-left: auto;
 }
 
+.small-box {
+  margin: 3em;
+}
+
 @media (min-width: 800px) {
   .box-main {
     padding: 1em;
@@ -644,7 +652,7 @@ footer .social-icons a:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .box-main {
     max-width: 70%;
   }
