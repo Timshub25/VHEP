@@ -373,10 +373,12 @@ nav a:hover {
 
 .hero-top {
   padding: 4em 1em;
-  background: #cbc4c4;
-  color: white;
-  background-image: url("../images/Buildings.jpg");
-  background-blend-mode: multiply;
+  background: #36b7ce;
+  color: #201a1a;
+  font-size: 1.2rem;
+  background-image: url("../images/ocean.jpg");
+  background-blend-mode: lighten;
+  background-position: 5% 60%;
 }
 
 .box-home {
@@ -879,6 +881,12 @@ footer .social-icons a:hover {
   padding: 1em;
 }
 
+.publications-wrapper .publications-info {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.publications-wrapper .publications-info,
 .publications-wrapper .publication,
 .publications-wrapper h3 {
   max-width: 1200px;
