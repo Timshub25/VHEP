@@ -224,9 +224,9 @@ nav {
   background: rgb(219, 203, 203);
   color: rgb(255, 253, 253);
   font-size: 1.2rem;
-  background-image: url("../images/ocean.jpg");
+  background-image: url("../images/office.jpg");
   background-blend-mode: multiply;
-  background-position: center;
+  background-position: bottom;
 }
 .hero-top-box {
   background: rgb(44, 39, 39);
@@ -301,7 +301,7 @@ nav {
     width: 50%;
     padding: 1em;
     margin: 0 auto;
-    opacity: 0.8;
+    opacity: 0.9;
     h1 {
       text-align: center;
     }

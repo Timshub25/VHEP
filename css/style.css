@@ -376,9 +376,9 @@ nav a:hover {
   background: #dbcbcb;
   color: #fffdfd;
   font-size: 1.2rem;
-  background-image: url("../images/ocean.jpg");
+  background-image: url("../images/office.jpg");
   background-blend-mode: multiply;
-  background-position: center;
+  background-position: bottom;
 }
 
 .hero-top h1 {
@@ -461,7 +461,7 @@ nav a:hover {
     width: 50%;
     padding: 1em;
     margin: 0 auto;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   .hero-top-box h1 {
     text-align: center;
