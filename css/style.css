@@ -373,15 +373,29 @@ nav a:hover {
 
 .hero-top {
   padding: 4em 1em;
-  background: #c7c3c3;
+  background: #f0e8e8;
   color: #fffdfd;
   font-size: 1.2rem;
-  background-image: url("../images/library.jpg");
+  background-image: url("../images/sunset.jpg");
   background-blend-mode: multiply;
+  background-position: center;
 }
 
 .hero-top h1 {
   font-weight: bold;
+}
+
+.hero-top-box {
+  background: #2c2727;
+  border: 1px solid white;
+  max-width: 800px;
+  padding: 1em;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+.hero-top-box h1 {
+  text-align: center;
 }
 
 .box-home {
@@ -439,10 +453,17 @@ nav a:hover {
   .home-container {
     padding: 0;
   }
-  .hero-top p {
-    font-size: 1.2rem;
-    max-width: 800px;
+  .hero-top-box {
+    background: #2c2727;
+    border: 1px solid white;
+    text-align: left;
+    width: 50%;
+    padding: 1em;
     margin: 0 auto;
+    opacity: 0.7;
+  }
+  .hero-top-box h1 {
+    text-align: center;
   }
   .hero-main {
     display: -webkit-box;
