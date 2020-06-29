@@ -373,12 +373,10 @@ nav a:hover {
 
 .hero-top {
   padding: 4em 1em;
-  background: #6e7374;
-  color: #f3f3f3;
+  background: black;
+  color: #f0ebeb;
   font-size: 1.2rem;
-  background-image: url("../images/dark_view.jpg");
-  background-blend-mode: multiply;
-  background-position: 5% 60%;
+  background-image: url("../images/library.jpg");
 }
 
 .hero-top h1 {

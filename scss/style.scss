@@ -221,12 +221,12 @@ nav {
     font-weight: bold;
   }
   padding: 4em 1em;
-  background: rgb(110, 115, 116);
-  color: rgb(243, 243, 243);
+  background: rgb(0, 0, 0);
+  color: rgb(240, 235, 235);
   font-size: 1.2rem;
-  background-image: url("../images/dark_view.jpg");
-  background-blend-mode: multiply;
-  background-position: 5% 60%;
+  background-image: url("../images/library.jpg");
+  // background-blend-mode: multiply;
+  // background-position: center;
 }
 
 .box-home {
