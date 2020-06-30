@@ -373,12 +373,11 @@ nav a:hover {
 
 .hero-top {
   padding: 4em 1em;
-  background: #dbcbcb;
+  background: #4f67b8;
   color: #fffdfd;
   font-size: 1.2rem;
-  background-image: url("../images/office.jpg");
-  background-blend-mode: multiply;
-  background-position: bottom;
+  background-image: url("../images/newcastle-drone.jpg");
+  background-position: 5% 20%;
 }
 
 .hero-top h1 {
@@ -390,7 +389,7 @@ nav a:hover {
   max-width: 800px;
   padding: 1em;
   margin: 0 auto;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .hero-top-box h1 {
@@ -461,7 +460,7 @@ nav a:hover {
     width: 50%;
     padding: 1em;
     margin: 0 auto;
-    opacity: 0.9;
+    opacity: 0.8;
   }
   .hero-top-box h1 {
     text-align: center;
