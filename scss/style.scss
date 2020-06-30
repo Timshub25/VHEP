@@ -221,16 +221,16 @@ nav {
     font-weight: bold;
   }
   padding: 4em 1em;
-  background: rgb(79, 103, 184);
+  background: rgb(89, 97, 121);
   color: rgb(255, 253, 253);
   font-size: 1.2rem;
-  background-image: url("../images/newcastle-drone.jpg");
-
-  background-position: 5% 20%;
+  background-image: url("../images/DJI_0188.jpg");
+  background-size: cover;
 }
 .hero-top-box {
   background: rgb(44, 39, 39);
-  max-width: 800px;
+  border: 3px solid white;
+  max-width: 700px;
   padding: 1em;
   margin: 0 auto;
   opacity: 0.9;
