@@ -127,19 +127,6 @@ body {
   line-height: 1.6;
 }
 
-/* Screen width display */
-.screen-width {
-  color: white;
-  background: red;
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  font-size: 1rem;
-  border-radius: 30%;
-  padding: 1em;
-  font-weight: bold;
-}
-
 /* TYPOGRAPHY */
 /* GENERAL LAYOUT */
 /* NAVIGATION MOBILE */
@@ -543,11 +530,6 @@ nav a:hover {
   color: black;
 }
 
-.ptext2,
-.ptext3 {
-  font-size: 2em;
-}
-
 .ptext .border {
   background-color: black;
   color: white;
@@ -831,8 +813,25 @@ footer .social-icons a:hover {
           transform: scale(1.1);
 }
 
-.partner-heading {
+.section-dark {
+  background: #333;
+  padding-bottom: 3em;
+}
+
+.section-dark h1 {
+  font-size: 2rem;
+}
+
+.section-dark .partner-heading {
   text-align: center;
+  color: white;
+  padding-top: 1em;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.section-dark .gallery-box {
+  background: white;
 }
 
 .grants-wrapper {
