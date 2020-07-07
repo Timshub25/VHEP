@@ -627,6 +627,33 @@ footer {
     background: white;
   }
 }
+//Media
+.media-wrapper {
+  display: grid;
+
+  padding: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 2em;
+
+  .card {
+    background: rgb(62, 80, 92);
+    .media-img {
+      width: 100%;
+      height: 250px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .card-info {
+    text-align: center;
+    color: white;
+    padding: 1em;
+  }
+}
 
 //Grants
 .grants-wrapper {
@@ -730,7 +757,7 @@ footer {
     }
   }
 }
-//MEDIA page
+//News Feed
 .twitter-feed {
   max-width: 1400px;
   margin: 0 auto;
