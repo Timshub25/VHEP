@@ -505,7 +505,7 @@ nav a:hover {
 
 .psection p {
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 1em auto;
   line-height: 2.2;
 }
 
@@ -524,7 +524,7 @@ nav a:hover {
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: black;
@@ -838,18 +838,28 @@ footer .social-icons a:hover {
   display: -ms-grid;
   display: grid;
   padding: 3em;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2em;
 }
 
 .media-wrapper .card {
   background: #3e505c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .media-wrapper .card .media-img {
   width: 100%;
-  height: 250px;
+  height: 200px;
 }
 
 .media-wrapper .card .media-img img {
@@ -863,6 +873,10 @@ footer .social-icons a:hover {
   text-align: center;
   color: white;
   padding: 1em;
+}
+
+.media-wrapper .card-info p {
+  margin: 1em;
 }
 
 .grants-wrapper {
