@@ -639,7 +639,6 @@ footer {
     background: rgb(62, 80, 92);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     .media-img {
       width: 100%;
@@ -651,6 +650,9 @@ footer {
         object-fit: cover;
       }
     }
+    a {
+      margin-top: auto;
+    }
   }
   .card-info {
     text-align: center;
@@ -658,6 +660,9 @@ footer {
     padding: 1em;
     p {
       margin: 1em;
+    }
+    .card-title {
+      font-size: 1.2rem;
     }
   }
 }

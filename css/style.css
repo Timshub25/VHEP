@@ -852,9 +852,6 @@ footer .social-icons a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .media-wrapper .card .media-img {
@@ -869,6 +866,10 @@ footer .social-icons a:hover {
      object-fit: cover;
 }
 
+.media-wrapper .card a {
+  margin-top: auto;
+}
+
 .media-wrapper .card-info {
   text-align: center;
   color: white;
@@ -877,6 +878,10 @@ footer .social-icons a:hover {
 
 .media-wrapper .card-info p {
   margin: 1em;
+}
+
+.media-wrapper .card-info .card-title {
+  font-size: 1.2rem;
 }
 
 .grants-wrapper {
