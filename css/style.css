@@ -82,6 +82,11 @@
   margin: 1em auto;
 }
 
+.cta-here {
+  color: white;
+  display: inline;
+}
+
 .main-heading {
   font-size: 4rem;
   font-weight: normal;
@@ -507,6 +512,7 @@ nav a:hover {
   max-width: 1300px;
   margin: 1em auto;
   line-height: 2.2;
+  font-size: 1.2rem;
 }
 
 .psection-dark {
@@ -630,6 +636,7 @@ footer .social-icons a:hover {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
+  font-size: 1.2rem;
 }
 
 .small-box {
